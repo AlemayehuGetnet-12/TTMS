@@ -1,0 +1,142 @@
+.container {
+  min-height: 100vh;
+  background: radial-gradient(
+    circle at top,
+    #eff6ff 0%,
+    #dbeafe 48%,
+    #e2e8f0 100%
+  );
+  color: #102a43;
+}
+
+.navbar {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #1d4ed8;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.navLink {
+  color: #334155;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navLink:hover {
+  color: #1d4ed8;
+}
+
+.hero {
+  padding: 5rem 1.25rem 3rem;
+  text-align: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  line-height: 1.05;
+  margin-bottom: 1rem;
+}
+
+.heroText {
+  font-size: 1.06rem;
+  color: #475569;
+  max-width: 42rem;
+  margin: 0 auto 2rem;
+  line-height: 1.8;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.primaryButton,
+.secondaryButton {
+  border-radius: 9999px;
+  padding: 1rem 1.75rem;
+  font-weight: 700;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+  text-decoration: none;
+}
+
+.primaryButton {
+  background: #1d4ed8;
+  color: #fff;
+}
+
+.primaryButton:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+.secondaryButton {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.secondaryButton:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.features {
+  padding: 3rem 1.25rem 5rem;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.featuresHeading {
+  text-align: center;
+  font-size: clamp(2rem, 3vw, 2.75rem);
+  margin-bottom: 2rem;
+  color: #0f172a;
+}
+
+.featureGrid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.featureCard {
+  background: #ffffff;
+  border-radius: 26px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+  padding: 1.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.featureTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #2563eb;
+}
+
+.featureText {
+  color: #475569;
+  line-height: 1.75;
+}
